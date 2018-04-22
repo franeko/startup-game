@@ -1,4 +1,13 @@
 .container {
-  display: flex; /* or inline-flex */
-  width: 100vw;
+  display: flex; 
+  /* width: 100vw; */
+}
+
+.container .logo {
+  /* width: 100%; */
+  /* flex-shrink: 1; */
+}
+
+.logo img {
+  width: 100%;
 }
