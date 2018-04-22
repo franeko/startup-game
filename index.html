@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="custom.css">
     <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196f3" />
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -20,8 +20,14 @@
 </head>
 
 <body>
-    <a href="/">
-        <img src="images/logo.jpg" </a>
+    <div class="container">
+        <a href="#" title="logo">
+            <img src="images/logo.jpg" title="logo" />
+        </a>
+    </div>
+    <div class="js-available">
+        JS is not available
+    </div>
 </body>
 
 
@@ -29,7 +35,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        addFeedsToSite("ulContainer");
+        $(".js-available").hide();
 
         //check if service worker is part of navigator
         // and therefore implmented by the current browser

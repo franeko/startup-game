@@ -1,7 +1,7 @@
 {
   "name": "Gra Startupowa",
-  "short_name": "Gra Startupowa",
-  "description": "Newssite example for BärnerJs Talk",
+  "short_name": "SG",
+  "description": "Gra Startupowa stworzona przez SKN Konsultingu IT",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
