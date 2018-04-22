@@ -10,9 +10,28 @@ self.addEventListener('install', function (event) {
         'manifest.json',
         'lib/jquery.min.js',
         'lib/bootstrap.min.css',
-        'custom.css',
-        'feedReader.js',
+        'main.css',
+        'images/logo.jpg'
       ]);
     })
+  );
+});
+
+self.addEventListener('activate', function (event) {
+  console.log('ServiceWorker: Activate');
+  //activate active worker asap
+  event.waitUntil(self.clients.claim());
+});
+
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      }
+      )
   );
 });
