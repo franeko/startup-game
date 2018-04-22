@@ -2,27 +2,31 @@
 <html lang="en">
 
 <head>
-    <title>Newssite</title>
+    <title>Startup Game</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="custom.css">
     <link rel="manifest" href="manifest.json">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png">
+
+    <!-- scripts -->
     <script src="lib/jquery.min.js"></script>
-    <script src="feedReader.js"></script>
+
 </head>
 
 <body>
-    <div>
-        <div class="jumbotron" style="margin:20px;padding:20px">
-            <h2>Newssite</h2>
-            <span id="loadingIndicator"></span><input type="button" class="btn pull-right" value="reload" onclick="addFeedsToSite('ulContainer');"
-            />
-            <ul id="ulContainer" class="list-group" style="padding-top:30px">
-
-            </ul>
-        </div>
+    <a href="/">
+        <img src="images/logo.jpg" </a>
 </body>
+
+
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         addFeedsToSite("ulContainer");
